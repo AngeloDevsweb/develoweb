@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../imagenes/icono.png" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../informacion/estilo.css">
+    <!-- aqui va el google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- aqui va fontawesome -->
+    <script src="https://kit.fontawesome.com/be012209b9.js" crossorigin="anonymous"></script>
+    <!-- aqui va bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Develoweb</title>
+</head>
+</head>
+<body>
+    <!-- esto es el menu de navegacion -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark p-2" style="background-color: black">
+
+        <div class="container"> 
+            <a class="brand-style" href="../index.html">Develoweb</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="navegacion">
+                          <a class="nav-enlaces" href="../index.html"><i class="fas fa-home"></i>HOME </a>
+                        </li>
+
+                        <li class="navegacion">
+                          <a class="nav-enlaces" href="../desarrollo-web/desarrollo.html"><i class="fab fa-weebly"></i>DESARROLLO WEB </a>
+                        </li>
+                        
+                        <li class="navegacion">
+                            <a class="nav-enlaces" href="../tutoriales/tutoriales.html"><i class="fas fa-chalkboard"></i>TUTORIALES </a>
+                          </li>
+                        
+                    </ul>
+                </div>
+        </div>
+    </nav>
+
+    <!-- aqui viene el contenido -->
+
+    <div class="container">
+        <h1 class="text-center mt-5 ">
+            ¿Cómo solucionar el error de instalacion y ejecucion de vue native usando expo-cli?
+        </h1>
+    </div>
+
+    <div class="container">
+        <div class="d-flex justify-content-center mt-4 ">
+          <img src="../imagenes/vuenative.jpg" alt="" class="estilo-imagen-portada">
+        </div>
+        
+    </div>
+
+    <!-- contenido -->
+
+    <div class="container">
+        <p class="mt-5 fuente-parrafo1">
+            Si llegaste a instalar vue native de manera correcta y sin ningún error entonces no tendrás de que preocuparte ya que al momento de ejecutar el cli de expo y capturar el QR con la app expo Go todo te funciono como debería, pero ¿y si ese no es el caso?, si a ti no te funciona al momento de ejecutar “npm start” o capturar el QR con la aplicación de expo ¿Cuál es el error?
+        </p>
+
+        <p class="fuente-parrafo1">
+           <strong> ¿Qué es lo que está fallando?</strong>, <strong> ¿Cómo lo puedo solucionar?</strong>, esas son las preguntas que seguramente te hiciste y por más que buscaste en internet, en blogs, y hasta en stack overflow no encontraste solución, a pesar de los intentos y de modificar los archivos no funciona.
+        </p>
+
+        <p class="fuente-parrafo1">
+            Y seguro has desinstalado e instalado varias veces, pero, aun así, sigue sin solución. Bien en esta guía voy a darte una ayuda con eso, para que puedas al fin ejecutar la aplicación sin ningún error.
+        </p>
+
+        <h2>Primer paso. -</h2>
+
+        <p class="mt-3 fuente-parrafo1">
+            Para empezar lo primero que debes hacer, es revisar tu versión de node js y ¿Por qué? Pues porque actualmente a la fecha de hoy que escribo esta guía (24-03-2021), la versión más actualizada de node js es la 14.16 y npm se encuentra en la versión 7.6.3, estas son las versiones más recientes. 
+        </p>
+
+        <p class="fuente-parrafo1">
+            El problema con vue native es que sus librerías no han sido actualizadas para la versión actual de node js y npm, es por esta razón que a ti te puede estar fallando y no te ejecuta el programa o la aplicación. Si este es el problema entonces lo que tienes que hacer es instalar una versión anterior de node js.
+        </p>
+
+        <p class="fuente-parrafo1">
+            Para esto yo te recomiendo que uses Laragon, esta es una herramienta que te será muy útil ya que podras correr node js y vue native dentro de ella. Instalarlo es muy fácil solo tienes que descargar la versión completa de Laragon y con ella vendrán instaladas diferentes tecnologías que te ayudaran en lo que necesites usar. Entre ellas vendrá instalado node js pero en una versión muy antigua que no te permitirá correr vue native, para esto tendrás que actualizarlo.
+        </p>
+
+        <!-- imagen de laragon -->
+        <div class="mt-4 d-flex justify-content-center">
+            <img src="../imagenes/vueNative/Captura.PNG" alt="">
+        </div>
+
+
+        <p class="mt-5 fuente-parrafo1">
+            Y realizar esto es muy sencillo, simplemente tienes que ir al siguiente enlace: <a href="https://nodejs.org/dist/" target="_blank">node js para laragon</a>
+            allí tienes que descargar la versión 12.13.1-win64x de node js, una vez descargado lo descomprimes y la subcarpeta la copias en la siguiente dirección: 
+            C:\laragon\bin\nodejs\node-v12.13.1
+        </p>
+
+        <p class="fuente-parrafo1">
+            Una vez que hayas hecho esto, abres laragon y en la pestaña <strong> Menu</strong> seleccionas Node js y allí le das click en la versión 12.13.1 node js, con esto quedara seleccionado con un tick la versión que acabas de descargar.
+        </p>
+
+        <h2>La versión de npm es mucho más importante que la versión de node js</h2>
+
+        <p class="mt-4 fuente-parrafo1">
+            Ahora hare un énfasis especial en npm y es porque este es el causante principal del error que no permite que puedas ejecutar el programa expo-cli ni puedas visualizarlo en la app de expo go para empezar a desarrollar tu aplicación con vue native. Y esto es debido a que la última actualización de npm, la versión 7, ha deprecado diferentes librerías y con ellas la esencial para nosotros que es <strong> Vue-native-scripts.</strong>
+        </p>
+
+        <p class="fuente-parrafo1">
+            Sin esta no vamos a poder ejecutar de manera correcta <strong> vue native con expo-cli, </strong> y siempre nos dara el mismo resultado, <strong> ERROR,</strong> no importa lo que intentes no te va a funcionar e incluso si intentas instalarlo como dice en su documentación oficial no te lo permitirá y solo te saldrá en la consola que no se pudo realizar la instalación y todo en error. Por esto es muy importante que no cambies la versión de npm que viene con el node js que te acabo de indicar, porque si lo actualizas a la versión 7 tendrás el mismo error nuevamente. 
+        </p>
+
+        <p class="fuente-parrafo1">
+            Las versiones con las que podrás ejecutar todo de manera correcta y por fin sin errores es la siguiente:
+        </p>
+
+        <!-- aqui va la imagen  -->
+
+        <div class="mt-4 d-flex justify-content-center">
+            <img src="../imagenes/vueNative/versiones.PNG" alt="">
+        </div>
+
+        <p class="mt-4 fuente-parrafo1">
+            Esas son las versiones que debes tener instaladas en laragon y no debes cambiarlas ni actualizarlas, de otro modo no funcionara porque como te explicaba la versión actual de npm no instala la librería <strong> Vue-native-script </strong>que es esencial para la ejecución de la aplicación. 
+        </p>
+
+        <h2>Segundo paso. -</h2>
+
+        <p class="mt-3 fuente-parrafo1">
+            Después de haberte explicado el principal error por el cual no funciona vue native, todo lo demás es muy sencillo. Solo tienes que instalar expo-cli y si no sabes cómo instalarlo te dejo aquí el link para que puedas ir a su documentación oficial: <a href="https://docs.expo.io/workflow/expo-cli/" target="_blank">expo-cli</a>
+        </p>
+
+        <p class="fuente-parrafo1">
+            Copias el comando en tu terminal para instalarlo de forma global y luego empezara la descarga, una vez terminado el proceso ya tendras expo-cli para poder desplegar vue native.
+        </p>
+
+        <div class="mt-4 d-flex justify-content-center">
+            <img src="../imagenes/vueNative/expo.PNG" alt="">
+        </div>
+
+        <h2 class="mt-4">Tercer paso. -</h2>
+
+        <p class="mt-3 fuente-parrafo1">
+            Luego de haber instalado expo-cli, ahora es el turno de instalar vue native para poder crear un proyecto con él y empezar a desarrollar con esta tecnología, al igual que en el paso anterior vamos a ir a su documentación oficial <a href="https://vue-native.io/docs/installation.html" target="_blank">Vue native</a>  y vamos a copiar y pegar en la consola el comando para instalarlo de forma global: <strong> npm install --global vue-native-cli</strong>
+        </p>
+
+        <h2>Cuarto paso. -</h2>
+
+        <p class="mt-2 fuente-parrafo1"> 
+            Una vez instalado vue native tan solo nos queda crear el proyecto y eso lo haremos con el siguiente comando: <strong> vue-native init "nombreDelProyecto"</strong>
+        </p>
+
+        <div class="mt-4 d-flex justify-content-center">
+            <img src="../imagenes/vueNative/vuenative.PNG" alt="">
+        </div>
+
+        <p class="mt-3 fuente-parrafo1">
+            Una vez ejecutado tendremos que esperar a que se cree el proyecto que por cierto tarda un buen tiempo, luego nos aparecerá en la consola que cambiemos al directorio en donde se ha creado nuestro proyecto y allí ejecutemos el comando npm start.
+        </p>
+
+        <div class="mt-4 d-flex justify-content-center">
+            <img src="../imagenes/vueNative/nuevoproyecto.PNG" alt="">
+        </div>
+
+        <p class="mt-3 fuente-parrafo1"> 
+            Si todo ha salido bien te aparecerá la siguiente ventana en el navegador:
+        </p>
+
+        <div class="mt-4 d-flex justify-content-center">
+            <img src="../imagenes/vueNative/explocli.PNG" alt="">
+        </div>
+
+        <p class="m-4 mb-4 fuente-parrafo1">
+            Este es el cli de expo con el cual tendrás que descargarte la app expo go de la play store lo instalas y tan solo sacas captura de QR que tienes en la ventana del navegador, si hiciste bien todos los pasos verás en tu teléfono como se ejecuta el código o el texto que está escrito en el proyecto creado por vue native, donde podrás empezar a desarrollar tu propio código o realizar cambios.
+        </p>
+
+        <div class="mt-4 d-flex justify-content-center">
+            <img src="../imagenes/vueNative/app.PNG" alt="">
+        </div>
+
+        <p class="mt-4 fuente-parrafo1">
+            Y bueno espero que esta guía te haya servido y que hayas podido entender cuál era el error que no te dejaba ejecutar vue native, en su momento yo también tuve el mismo error y no encontraba la forma de solucionarlo, hasta que después de mucho leer e intentar muchas cosas pude al fin dar con la solución.
+        </p>
+
+    </div>
+
+    <!-- pie de pagina -->
+    <footer class="pie-de-pagina mt-5">
+        <p class="p-pie"><a href="https://www.facebook.com/Gweb-105687721608193" class="nav-piedepagina" target="_blank"><i class="fab fa-facebook-square"></i>facebook</a></p>
+        <p>Desarrollado por Develoweb &copy; 2021</p>
+      </footer>
+
+      <!-- esto es parte de bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

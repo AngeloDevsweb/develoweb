@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../imagenes/icono.png" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../informacion/estilo.css">
+    <!-- aqui va el google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- aqui va fontawesome -->
+    <script src="https://kit.fontawesome.com/be012209b9.js" crossorigin="anonymous"></script>
+    <!-- aqui va bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Develoweb</title>
+</head>
+<body>
+    <!-- esto es el menu de navegacion -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark p-2" style="background-color: black">
+
+        <div class="container"> 
+            <a class="brand-style" href="../index.html">Develoweb</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="navegacion">
+                          <a class="nav-enlaces" href="../index.html"><i class="fas fa-home"></i>HOME </a>
+                        </li>
+
+                        <li class="navegacion">
+                          <a class="nav-enlaces" href="../desarrollo-web/desarrollo.html"><i class="fab fa-weebly"></i>DESARROLLO WEB </a>
+                        </li>
+                        
+                        <li class="navegacion">
+                            <a class="nav-enlaces" href="../tutoriales/tutoriales.html"><i class="fas fa-chalkboard"></i>TUTORIALES </a>
+                          </li>
+                        
+                    </ul>
+                </div>
+        </div>
+      </nav>
+
+      <!-- aqui viene el contenido -->
+
+      <div class="container">
+        <h1 class="text-center mt-5 ">
+            REACT JS
+        </h1>
+    </div>
+
+    <div class="container">
+        <div class="d-flex justify-content-center mt-4 ">
+          <img src="../imagenes/logoReact.png" alt="" class="estilo-imagen-portada">
+        </div>
+        
+    </div>
+
+
+    <!-- contenido -->
+
+    <div class="container">
+        <p class="mt-5 fuente-parrafo1">
+            ¿Qué es React? Bien, seguramente escuchaste decir que dentro de los frameworks de javascript existe react js, pero exactamente ¿Qué es?, ¿Cómo funciona?, no te preocupes tratare de explicártelo de una forma sencilla para que entiendas un poco acerca de la funcionalidad de esta librería.
+        </p>
+
+        <p class="fuente-parrafo1">
+            Y si, como lo leíste React js no es un framework o al menos no es considerado uno, sino más bien como una librería para javascript. Pese a la popularidad que tuvo esta biblioteca y a que la comunidad de desarrolladores le diera tanto crecimiento sigue sin ser un framework pero las funcionalidades que ofrece permite que se le considere como uno.
+        </p>
+
+        <p class="fuente-parrafo1">
+            React es una librería que está enfocada a la creación de interfaces de usuario, con la cual podras desarrollar el frontend o el lado del cliente de una web, además de ello react es un excelente aliado para construir web SPA (Single page application). Para aquellos que no entiendan que quiere decir esto porque recién están empezando dentro del mundo del desarrollo web, te lo resumo:
+            Las aplicaciones de una sola página o SPA por sus siglas en inglés, son páginas web que están construidas en una sola página (valga la redundancia ) y es que la características de estas webs es que cargan todos sus componentes una sola vez, es decir, la primer carga de la página es la que tarda, pero luego podrás navegar a través de todos sus componentes de una forma rápida sin tener que volver a recargar la página. Esto posibilita un uso más eficaz sobre las páginas web o bien para las aplicaciones web, que en este caso seria las más beneficiadas porque no tendrás que esperar a que el servidor responda y añadido a eso que la pagina recargue cada vez que hagas una petición.
+
+        </p>
+
+        <p class="fuente-parrafo1">
+            Es por eso que esta librería se centra en ello en una SPA, con la cual usando react podrás usar componentes y estos usarlos como piezas que encajen dentro de una página web. Si lo quieres ver de otro modo es como que tengas un lienzo y luego empieces a pintar parte por parte.
+        </p>
+
+        <h2 class="mt-4 mb-3">¿Cómo usar React?</h2>
+
+        <p class="fuente-parrafo1">
+            React te ayuda a crear interfaces de usuario interactivas de forma sencilla. Diseña vistas simples para cada estado en tu aplicación, y React se encargará de actualizar y renderizar de manera eficiente los componentes correctos cuando los datos cambien.
+        </p>
+
+        <p class="fuente-parrafo1">
+            Crea componentes encapsulados que manejen su propio estado, y conviértelos en interfaces de usuario complejas. Ya que la lógica de los componentes está escrita en JavaScript y no en plantillas, puedes pasar datos de forma sencilla a través de tu aplicación y mantener el estado fuera del DOM.
+        </p>
+
+        <p class="fuente-parrafo1">
+            Puedes usar React a través de una CDN pero no sería lo más recomendable o al menos yo no te lo recomiendo, porque para usar sus funcionalidades tendrías que ponerlas en cada etiqueta y eso se volvería molesto. Para ello lo que yo te recomiendo es que uses “créate-react-app” con el cual podras instalar un proyecto de react en tu escritorio, pero necesitaras también instalar antes Node js y NPM que es el manejador de paquetes de Node, con ello tendrías tu pc listo para poder instalar react.
+            En la siguiente imagen veras como colocar el comando: 
+
+            
+
+        </p>
+        <!-- aqui va la imagen  -->
+
+        <div class="mt-4 d-flex justify-content-center">
+            <img src="../imagenes/reactjs.JPG" alt="">
+        </div>
+
+        <p class="mt-4 fuente-parrafo1">
+            Una vez que hayas instalado react a través de la consola de comando tan solo necesitaras ejecutar “npm start” y con ello automáticamente se abrirá en tu navegador la página de ejemplo que react te muestra y este ocupara un puerto de tu servidor local, por el cual estará a la escucha de cualquier cambio que hagas en la página mientras se encuentre ejecutado el “npm start”.
+        </p>
+
+        <p class="fuente-parrafo1">
+            Si quieres más información acerca de cómo usar React, te dejo el link para que veas la documentación oficial: <a href="https://es.reactjs.org/" target="_blank">REACT JS</a>
+        </p>
+
+
+    </div>
+
+    <!-- pie de pagina -->
+    <footer class="pie-de-pagina mt-5">
+        <p class="p-pie"><a href="https://www.facebook.com/Gweb-105687721608193" class="nav-piedepagina" target="_blank"><i class="fab fa-facebook-square"></i>facebook</a></p>
+        <p>Desarrollado por Develoweb &copy; 2021</p>
+      </footer>
+
+      <!-- esto es parte de bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+</body>
+</html>

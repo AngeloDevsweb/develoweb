@@ -1,0 +1,120 @@
+/* estilo para el body */
+
+body{
+    background-color: white;
+}
+
+/* estilo para el brand */
+.brand-style{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+.brand-style:hover{
+    text-decoration: none;
+    color: darkgrey;
+}
+
+/* estilos para menu de navegacion */
+.navegacion{
+    padding: 15px;
+    transition: all 0.25s;
+}
+.navegacion:hover{
+    background-color: #d72323;
+}
+.nav-enlaces{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.nav-enlaces:hover{
+    color: darkgrey;
+    text-decoration: none;
+}
+
+/* clase para redimensionar el tamaño de las imagenes del carrusel */
+.tamaño-banner{
+    width: 100%;
+    height: 480px;
+}
+/* este es el h2*/
+.estilo-descripcion{
+    text-align: center;
+    font-size: 48px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    border-radius: 3px;
+    padding: 5px;
+}
+.imagenes-segunda{
+    height: 320px;
+    width: 320px;
+}
+.imagenes-tercera{
+    height: 230px;
+    width: 230px;
+}
+
+/* estilo para el h2 de frontend*/
+.fondo{
+    background-color: black;
+    color: white;
+}
+/* la parte de declaracion  */
+.padre-declaracion{
+    /* margin-top: 25px;
+    margin-bottom: 25px; */
+    background-color: #3e3636;
+    height: 250px;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.declaracion-principal{
+    text-align: center;
+    color: white;
+    
+     
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+
+/* pie de pagina */
+.pie-de-pagina{
+    background-color: black;
+    height: 70px;
+
+    
+    
+}
+.nav-piedepagina{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.nav-piedepagina:hover{
+    text-decoration: none;
+}
+.p-pie{
+    padding: 10px;
+}
+.pie-de-pagina p{
+    color: white;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+
+.fuente-parrafo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.fuente-lobster{
+    font-family: 'Lobster', cursive;
+}
